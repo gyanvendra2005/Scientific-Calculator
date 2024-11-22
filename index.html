@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCIENTIFIC CALCI</title>
-    <!-- <link rel="stylesheet" href="calci.css">
-    <link rel="stylesheet" type="text/css" -->
-    <!-- href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
      <link rel="stylesheet" href="style.css">
 </head> 
 <body>
@@ -20,6 +17,7 @@
                 <div class="row">
                     <button id="ce" onclick="backspc()">CE</button>
                     <button onclick="fact()">x!</button>
+                    <button onclick="mod()">|x|</button>
                     <button class="btn">(</button>
                     <button class="btn">)</button>
                     <button class="btn">%</button>
@@ -29,6 +27,7 @@
                 <div class="row">
                     <button onclick="sin()">sin</button>
                     <button onclick="pi()">π</button>
+                    <button onclick="logBase()">log<span style="position: relative; bottom: -.4em; left: .1em; right: .1em;">x</span>y</button>
                     <button class="btn">7</button>
                     <button class="btn">8</button>
                     <button class="btn">9</button>
@@ -38,6 +37,7 @@
                 <div class="row">
                     <button onclick="cos()">cos</button>
                     <button onclick="log()">log</button>
+                    <button onclick="inverse()">x <span style="position: relative; bottom: .4em; right: .1em;">-1</span></button>
                     <button class="btn">4</button>
                     <button class="btn">5</button>
                     <button class="btn">6</button>
@@ -47,6 +47,7 @@
                 <div class="row">
                     <button onclick="tan()">tan</button>
                     <button onclick="sqrt()">√</button>
+                    <button onclick="signChange()">(-)</button>
                     <button class="btn">1</button>
                     <button class="btn">2</button>
                     <button class="btn">3</button>
@@ -55,7 +56,9 @@
 
                 <div class="row">
                     <button onclick="e()">e</button>
-                    <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span> </button>
+                    <button onclick="calculatePower()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span> </button>
+                    <button class="btn">^</button>
+                    <!-- <input type="button" value="x^y" onclick="calculatePower()"> -->
                     <button class="btn">0</button>
                     <button class="btn">.</button>
                     <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
@@ -63,9 +66,9 @@
                 </div>
             </div>
         </div>
-     
-    <!-- <h2>soft <span>SCIENTIFIC</span><br>CALCI <br> <i style="font-size: 100px;" class="fa fa-reply"></i></h2> -->
+
        
 </body>   
 <script src="script.js"></script>
 </html>
+
